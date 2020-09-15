@@ -4,7 +4,7 @@
 A responsive landing page for a podcast channel, includes some podcast from a music platfor.
 
 
-### This project use the followig tecnologies
+### This project use the followig technologies
 
 1. HTML 5
 2. Css 3
