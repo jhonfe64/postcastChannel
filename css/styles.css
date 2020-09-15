@@ -1,0 +1,802 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;;
+}
+
+h2.subtitle{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight:500;
+}
+
+
+.container {
+    width: 90%;
+    margin-top: 10%;
+    margin: auto;
+    max-width: 1800px;
+}
+
+button:focus, audio:focus {
+    outline:0;
+}
+
+/********************HEADER******************************/
+
+header {
+    z-index: 100;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input, label {
+    display: none;
+}
+
+header .btn-menu input {
+    display: none;
+}
+
+header .img-logo-container {
+    width: 70px;
+}
+
+header .img-logo-container img {
+    width: 100%;
+}
+
+header ul li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+header ul li a {
+    color: #000;
+}
+
+header  ul li:last-child {
+    padding-right: 0;
+}
+
+
+
+/********************JUMBOTRON SECTION******************************/
+
+.jumbotron{
+    overflow: hidden;
+    margin-top: 100px;
+    height: 100%;
+} 
+
+
+.jumbotron .img-container {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    animation-name: left-image;
+    animation-duration: 2.5s;
+}
+
+@keyframes left-image {
+    0% {
+        margin-left: -100%;
+        opacity: 0;
+    }
+}
+
+.jumbotron .img-container img {
+    width: 95%;
+    float: left;
+}
+
+.jumbotron .description {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    float:right;
+    animation-name: description;
+    animation-duration: 2.5s;
+}
+
+
+@keyframes description {
+    0% {
+        margin-right: -100%;
+        opacity: 0;
+    }
+}
+
+.description div h1 {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+
+.description h2 {
+    font-size: 2rem;
+    color: #95a5a6;
+    font-weight: 300;
+}
+
+
+/********************EPISODES SECTION******************************/
+
+.episodes {
+    padding-top: 80px;
+    padding-bottom: 400px;
+    margin-top: 70px;
+    position: relative;
+   
+}
+
+.episodes h2 {
+    color: #ffffff;
+}
+
+.episodes .episodes-background{
+    background-image: linear-gradient(to right,  #2B32B2, #1488CC);
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    transform: skewY(-1.5deg);
+    height: 100%;
+}
+.episodes ul {
+    overflow: hidden;
+}
+
+.episodes ul li {
+    display: flex;
+    justify-content: center;
+    width:  33.33%;
+    float: left;
+    margin-bottom: 45px;
+}
+
+
+
+.episodes ul li iframe {
+    transition: .2S;
+    border: none;
+    border-radius: 10px;
+}
+
+.episodes ul li iframe:hover {
+    box-shadow: #000 5px 5px 3px;
+}
+
+.episodes ul li iframe:hover {
+    opacity: .8;
+}
+
+/********************MOST VIEWED SECTION******************************/
+
+.most-viewed {
+    margin-top: -250px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.most-viewed .most-viewed-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    background:#ecf0f1;
+    z-index: -150; 
+}
+
+.most-viewed .container {
+   overflow: hidden;
+}
+
+
+.most-viewed .img-container {
+    width: 45%;
+    float: left;
+}
+
+.most-viewed .img-container img {
+    width: 100%;
+}
+
+.most-viewed .most-viewed-description {
+    margin-top: 12%;
+    width: 45%;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.most-viewed .most-viewed-description-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#020F59;
+    border-radius: 5px;
+    z-index: -50;
+    transform: skewY(-1.5deg);
+    transform: skewX(-20deg);
+    box-shadow: #7f8c8d 5px 5px 10px;
+}
+
+.most-viewed .most-viewed-description h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.most-viewed .most-viewed-description p {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+
+/********************INVITED SECTION******************************/
+
+.invited {
+    background:#ecf0f1;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.invited .container {
+    overflow: hidden;
+}
+
+.invited div.invited-container {
+    float: left;
+    width: 33.3%;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.invited div.invited-container:hover .face {
+    display: flex;
+}
+
+
+.invited div.invited-container .face {
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    right: 20px;
+    width: 12%;
+    height: 12%;
+    border-radius: 100%;
+    color: #ffffff;
+    background:#505AFC;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    transition-delay: 0.3s;
+}
+
+.invited div.invited-container .face span {
+    font-size: 1.875rem;
+    padding: 10px;
+}
+
+
+.invited div.invited-container .face .content {
+    z-index: 1000;
+    display: none;
+}
+
+.invited div.invited-container .face .content a{
+    color: #ffffff;
+}
+
+.invited div.invited-container .face:hover .content a{
+    font-size: 2.5rem;
+}
+
+.invited div.invited-container .face .content a:hover:first-child {
+    color: #3b5998;
+}
+
+
+.invited div.invited-container .face .content a:hover:nth-child(2) {
+    color: #1da1f2;
+}
+
+
+.invited div.invited-container .face .content a:hover:last-child {
+    color: #dd4b39;
+}
+
+.invited div.invited-container .face:hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    border-radius: 0;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+
+}
+
+.invited div.invited-container .face:hover span {
+    display: none;
+}
+
+.invited div.invited-container .face:hover .content1 {
+    display: block;
+}
+
+.invited div.invited-container .face:hover .content2 {
+    display: block;
+}
+
+.invited div.invited-container .face:hover .content3 {
+    display: block;
+}
+
+.invited div.invited-container .face:hover .content4 {
+    display: block;
+}
+
+.invited div.invited-container .face:hover .content5 {
+    display: block;
+}
+
+.invited div.invited-container .face:hover .content6 {
+    display: block;
+}
+
+
+.invited div.invited-container img {
+    width: 100%;
+}
+
+
+/********************TOPICS SECTION******************************/
+
+.topics {
+    margin-bottom: 100px;
+}
+
+.topics ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+.topics ul li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.topics ul li:last-child {
+    margin-right: 0;
+}
+
+.topics ul li span {
+    font-size: 5rem;
+    color: #000;
+    transition: 0.2s;
+
+}
+
+.topics ul li a span:hover {
+    margin-left: 15px;
+    opacity: 0.5;
+}
+
+.topics ul li h5 {
+    font-size: 1.25rem;
+    color: #000;
+    margin-top: 10px;
+}
+
+
+
+/********************LATEST PODCAST SECTION******************************/
+
+.latest-podcast {
+    background-image: linear-gradient(to right,  #2B32B2, #1488CC);
+    padding: 50px 0;
+    position: relative;
+}
+
+.latest-podcast h2 {
+    color: #ffffff;
+}
+
+.latest-podcast button {
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background: none;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.latest-podcast button:hover {
+    background: #ffffff;
+    color:#00123B;
+    font-weight: 600;
+}
+
+.latest-podcast #latest-podcast-bg {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    fill: #00123B
+}
+
+/********************FOOTER******************************/
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #00123B;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social span{
+    font-size: 1.3rem;
+    padding: 10px;
+    color: #ffffff;
+    transition: .4s;
+}
+
+footer .social span:hover{
+    color: #bdc3c7;
+}
+
+footer .copy-right p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/********************TOP BUTTON******************************/
+
+.top-button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 1000;
+    border-radius: 100%;
+    right: 30px;
+
+}
+
+.top-button a {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+
+
+
+
+/**********1280 PX**********/
+
+@media screen and (max-width: 1280px){
+
+    .most-viewed .most-viewed {
+        margin-bottom: 100px;
+    }
+    .most-viewed .img-container {
+        display: block;
+        margin: auto;
+        width: 70%;
+        float: none;
+    }
+
+    .most-viewed .most-viewed-background {
+        background: #020F59;
+    }
+
+    .most-viewed .most-viewed-description {
+       text-align: center;
+       margin-top: 50px;
+       width: 100%;
+       box-shadow: none;
+    }
+
+    .most-viewed .most-viewed-description-bg {
+        transform: skew(0);
+        box-shadow: 0px 0px 0px transparent ;
+        border-radius: 0;
+
+    }
+}
+
+
+/**********1178 PX**********/
+
+@media screen and (max-width: 1178px){
+    .episodes ul li {
+        width: 50%;
+    } 
+
+    .topics ul li {
+       width: 50%;
+       margin-right: 0;
+       float: left;
+       margin-bottom: 50px;
+    }
+
+    .invited .container h2 {
+        padding-top: 100px;
+    }
+}
+
+/**********1024 PX**********/
+
+@media screen and (max-width: 1024px){
+    .invited div.invited-container .face:hover {
+        transition: 0s;
+    }
+
+    .invited div.invited-container {
+       width: 50%;
+    }
+
+}
+
+
+/**********991 PX**********/
+
+@media screen and (max-width: 991px){
+
+    header label {
+        display: block;
+    }
+
+
+    header nav {
+        position: fixed;
+        background: #ffffff;
+        z-index: 1000;
+        width: 100%;
+        left: 0;
+        top: 70px;
+        height: 100vh;
+        overflow-y: auto;
+        margin-left:-100%;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin-left:0;
+        transition: 0;
+    }
+
+    #btn-menu:not(:checked) ~ .menu{
+        margin-left:-100%;
+        transition: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 20px 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+
+
+    #btn-menu:checked ~ .menu {
+        display: block;
+        width: 100%;
+    }
+
+
+    .jumbotron .img-container {
+        height: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    .jumbotron .description {
+        height: 100%;
+        width: 100%;
+        float:none;
+        padding:0;
+        margin-top: 50px;
+    }
+
+    .jumbotron .description div {
+        display: block;
+        width: 100%;
+    }
+
+    .jumbotron .description h1, h2 {
+        text-align: center;
+    }
+
+    .episodes {
+
+        padding-bottom: 300px;
+       
+    }
+
+    .most-viewed .img-container {
+        width: 100%;
+    }
+
+
+}
+
+/**********768 PX**********/
+
+@media screen and (max-width: 768px){
+
+    h2.subtitle {
+        font-size: 1.875rem;
+    }
+
+    .jumbotron .description h1 {
+        font-size: 1.875rem;
+    } 
+
+    .jumbotron .description h2 {
+        font-size: 1.25rem;
+    }  
+    
+    .episodes {
+
+        padding-bottom: 200px;
+       
+    }
+
+    .episodes ul li {
+        width: 100%;
+    } 
+
+    
+    .episodes .autoplay{
+        display: none;
+    }
+
+    .most-viewed {
+        margin-top: -150px;
+    }
+
+    
+    .most-viewed .most-viewed-description h3 {
+        font-size: 1.875rem;
+    }
+
+    .most-viewed .most-viewed-description p {
+        font-size: 1rem;
+    }
+
+    .invited div.invited-container .face {
+        display: flex;
+     
+     }
+
+    .invited div.invited-container .face span {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .topics ul li span {
+        font-size: 4rem;
+    }
+    
+    .topics ul li h5 {
+        font-size: 1rem;
+    }
+
+    footer .social span{
+        font-size: 1rem;
+    }
+
+    .top-button {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+}
+
+/**********480 PX**********/
+
+@media screen and (max-width: 480px){
+    .most-viewed {
+        margin-top: -100px;
+    }
+
+    .episodes {
+
+        padding-bottom: 120px;
+       
+    }
+
+    .invited div.invited-container {
+        width: 100%;
+     }
+
+     .topics ul li span {
+        font-size: 3rem;
+    }
+
+}    
+
+/**********320 PX**********/
+
+@media screen and (max-width: 320px){
+    .jumbotron .description h1 {
+        font-size: 1.25rem;
+    } 
+
+    .jumbotron .description h2 {
+        font-size: 0.9375rem;
+    }   
+
+    .episodes {
+
+        padding-bottom: 110px;
+       
+    }
+}
+
