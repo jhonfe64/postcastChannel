@@ -1,7 +1,7 @@
 # postcastChannel
 
 
-A responsive landing page for a podcast channel, includes some podcast from a music platfor.
+A responsive landing page for a podcast channel, includes some podcast from a music platform.
 
 
 ### This project use the followig technologies:
