@@ -12,8 +12,6 @@ A responsive landing page for a podcast channel, includes some podcast from a mu
 
 ### To clone the repository and running the project please follow this instructions:
 
-- Clone the repository https://github.com/jhonfe64/delia.git
+- type on vsc console git clone https://github.com/jhonfe64/postcastChannel.git
 - Open the index file
 
-
-![](https://github.com/jhonfe64/postcastChannel/blob/master/podcast.png?raw=true)
