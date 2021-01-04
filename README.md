@@ -14,3 +14,6 @@ A responsive landing page for a podcast channel, includes some podcast from a mu
 
 - Clone the repository https://github.com/jhonfe64/delia.git
 - Open the index file
+
+
+![](https://github.com/jhonfe64/postcastChannel/blob/master/podcast.png?raw=true)
