@@ -15,6 +15,7 @@ A responsive landing page for a podcast channel, includes some podcast from a mu
 - Type on vsc console: git clone https://github.com/jhonfe64/postcastChannel.git
 - Open the index file
 
+check the project on vercel  https://postcast-channel.vercel.app/
 
 
  
